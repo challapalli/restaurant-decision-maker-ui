@@ -1,0 +1,18 @@
+<div class="container">
+<div *ngIf="!sessionCreated">
+  <h2>Create Session</h2>
+  <button (click)="createSession()">Start Session</button>
+</div>
+
+<div *ngIf="sessionCreated">
+  <h3>Session Id Created: {{ sessionId }}</h3>
+</div>
+
+<button *ngIf="sessionCreated">
+  <a [routerLink]="['/join-session']">Join Session</a>
+</button>
+<br>
+<hr>
+<button (click)="back()">Back</button>
+</div>
+  

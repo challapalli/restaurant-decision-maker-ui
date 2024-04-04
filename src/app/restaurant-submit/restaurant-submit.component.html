@@ -1,0 +1,23 @@
+<div class="container">
+<div *ngIf="!selectedRes">
+    <h2>Submit Restaurant</h2>
+    <hr>
+    <input type="text" placeholder="Enter Restaurant Name" #restaurantName (keypress)="onlyText($event)">
+    <button (click)="submitRestaurant(restaurantName)">Submit Restaurant</button>
+  
+    <h3>Restaurants:</h3>
+    <ul>
+      <li *ngFor="let restaurant of restaurants">{{ restaurant.name }}</li>
+    </ul>
+    <hr>
+    <button *ngIf="isDisconnectEnabled" (click)="disconnect()">End Session</button>
+    <button [routerLink]="['/join-session']">Back</button>
+  </div>
+
+  <div *ngIf="selectedRes">
+    <h2>Selected Restaurant</h2>
+    <hr>
+    <h3>Restaurant Name: {{ selectedRes.name }}</h3> 
+  </div>
+</div>
+  

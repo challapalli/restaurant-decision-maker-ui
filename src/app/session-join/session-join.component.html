@@ -1,0 +1,12 @@
+<div class="container">
+<div>
+    <h2>Join Session</h2>
+    <input type="text" placeholder="Enter Session ID" #sessionId>
+    <button (click)="joinSession(sessionId.value)">Join Session</button>
+</div>
+<div *ngIf="errorMsg"> {{ errorMsg }} </div>
+<br>
+<hr>
+<button (click)="back()">Back</button>
+</div>
+  
