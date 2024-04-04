@@ -32,10 +32,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Features:  
 
-Users Registration & Login.  
+Users Registration & Login. 
+
 Session Creation: Users can initiate a session and share it with team members.  
+
 Joining Sessions: Users can join existing sessions by entering the session ID.  
+
 Restaurant Submission: Users can submit their preferred restaurant name with an optional description.  
+
 Real-time Updates: Submitted restaurants are displayed as a list for all participants in real-time.  
+
 Random Selection: Upon session closure, a restaurant is randomly picked from all submitted options. All users are notified of the chosen restaurant.  
 
