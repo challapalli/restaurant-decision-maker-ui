@@ -2,7 +2,7 @@
 <div *ngIf="!selectedRes">
     <h2>Submit Restaurant</h2>
     <hr>
-    <input type="text" placeholder="Enter Restaurant Name" #restaurantName (keypress)="onlyText($event)">
+    <input type="text" placeholder="Enter Restaurant Name" #restaurantName (keypress)="onlyText($event)" maxlength="50">
     <button (click)="submitRestaurant(restaurantName)">Submit Restaurant</button>
   
     <h3>Restaurants:</h3>
